@@ -56,6 +56,14 @@
     variant = "";
   };
 
+  i18n.inputMethod = {
+      type = "fcitx5";
+      enable = true;
+      fcitx5.addons = with pkgs; [
+        fcitx5-configtool
+      ];
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
