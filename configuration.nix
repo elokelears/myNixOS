@@ -114,7 +114,6 @@
 
     code-cursor
 
-    git
 
   ];
 
