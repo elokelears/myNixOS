@@ -17,6 +17,5 @@
 
   boot.blacklistedKernelModules = [ "nouveau" ]; # 禁用 nouveau
 
-  hardware.vulkan.enable = true;
-  hardware.vulkan.support32Bit = true;
+
 }
