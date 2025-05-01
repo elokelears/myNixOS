@@ -36,7 +36,8 @@
           ./host/machines/desktop-nvidia
         ];
       };
-    }
+    };
+}
                        
           
 
