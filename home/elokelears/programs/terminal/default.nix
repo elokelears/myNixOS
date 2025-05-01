@@ -2,8 +2,6 @@
 
 {
   imports = [
-    ./development
-    ./shell
-    ./terminal
+    ./kitty.nix
   ];
 }
