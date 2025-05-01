@@ -35,6 +35,7 @@
       fcitx5-configtool
       fcitx5-gtk
       kdePackages.fcitx5-qt
+      fcitx5-rime
     ];
   };
 
