@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./development
-    ./shell
+    ./fish.nix
   ];
 }

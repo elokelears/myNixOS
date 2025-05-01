@@ -1,9 +1,10 @@
 { config, pkgs, ... }:
 
 {
-    home.packages = [
-        pkgs.fish
+    imports = [
+        ./config/state.nix
+        ./programs
     ];
 
-    home.stateVersion = "24.11";
+    
 }
