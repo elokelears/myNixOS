@@ -36,6 +36,13 @@
           ./host/machines/desktop-nvidia
         ];
       };
+
+      nixosConfigurations.laptop-amd = mkNixosSystem {
+        hostname = "laptop-amd";
+        modules = [
+          ./host/machines/laptop-amd
+        ];
+      };
     };
 }
                        
