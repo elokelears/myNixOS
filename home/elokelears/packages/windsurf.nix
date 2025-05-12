@@ -3,6 +3,6 @@
 {
     home.packages = [
         pkgs.windsurf
-        pkgs.cursor
+        pkgs.code-cursor
     ];
 }
