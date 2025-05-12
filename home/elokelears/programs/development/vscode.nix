@@ -8,7 +8,7 @@
         extensions = [
           pkgs.vscode-extensions.jnoortheen.nix-ide
         ];
-      }
+      };
     };
   };
 }
