@@ -32,7 +32,7 @@
               home-manager.users.elokelears = import ./home/elokelears/home.nix;
             }
 
-            nur.nixosModules.default
+            nur.modules.nixos.default
           ] ++ modules;
         };
     in
