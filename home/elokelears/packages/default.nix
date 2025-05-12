@@ -1,0 +1,7 @@
+{ pkgs, ... }:
+
+{
+    imports = [
+        ./windsurf.nix
+    ];
+}

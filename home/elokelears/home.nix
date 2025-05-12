@@ -4,6 +4,7 @@
     imports = [
         ./config/state.nix
         ./programs
+        ./packages
     ];
 
     
