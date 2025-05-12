@@ -7,6 +7,7 @@
       "default" = {
         extensions = [
           pkgs.vscode-extensions.jnoortheen.nix-ide
+          pkgs.vscode-extensions.rooveterinaryinc.roo-cline
         ];
       };
     };
