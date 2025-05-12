@@ -9,9 +9,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@ inputs:
+  outputs = { self, nixpkgs, home-manager, nur, ... }@ inputs:
     let
       mkNixosSystem = { system ? "x86_64-linux", hostname, modules ? [ ], specialArgs ? { } }:
         nixpkgs.lib.nixosSystem {
@@ -26,6 +31,8 @@
               home-manager.useUserPackages = true;
               home-manager.users.elokelears = import ./home/elokelears/home.nix;
             }
+
+            nur.nixosModules.default
           ] ++ modules;
         };
     in
