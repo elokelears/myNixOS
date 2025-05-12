@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 
 {
-  programs.code = {
+  programs.vscode = {
     enable = true;
   };
 }
