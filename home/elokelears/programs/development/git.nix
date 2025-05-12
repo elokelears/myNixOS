@@ -7,4 +7,9 @@
     userEmail = "elokelears@gmail.com";
   };
 
+  programs.lazygit = {
+    enable = true;
+
+  };
+
 }
