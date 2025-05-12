@@ -2,6 +2,6 @@
 
 {
     imports = [
-        ./windsurf.nix
+        ./development
     ];
 }
