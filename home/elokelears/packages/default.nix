@@ -3,5 +3,6 @@
 {
     imports = [
         ./development
+        ./markdown-edit
     ];
 }
