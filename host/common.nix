@@ -109,6 +109,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.elokelears = {
     isNormalUser = true;
+    shell = pkgs.fish;
     description = "elokelears";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
