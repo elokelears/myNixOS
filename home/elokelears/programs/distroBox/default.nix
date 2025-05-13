@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  services.podman = {
+    enable = true;
+  };
+
   programs.distrobox = {
     enable = true;
     containers = {
