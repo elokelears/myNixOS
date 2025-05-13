@@ -5,5 +5,6 @@
     ./development
     ./shell
     ./terminal
+    ./distroBox
   ];
 }
