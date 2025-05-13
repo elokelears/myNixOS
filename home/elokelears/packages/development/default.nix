@@ -5,6 +5,6 @@
         pkgs.windsurf
         pkgs.code-cursor
         pkgs.jetbrains.idea-ultimate
-        nur.repos.xddxdd.dingtalk
+        pkgs.nur.repos.xddxdd.dingtalk
     ];
 }
