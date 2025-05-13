@@ -3,6 +3,6 @@
 {
   programs.direnv = {
     enable = true;
-    nix-direnv = true;
+    nix-direnv.enable = true;
   };
 }
