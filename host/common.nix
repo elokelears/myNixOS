@@ -105,6 +105,9 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+  
+  # Enable fish to install and set to be default shell
+  programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.elokelears = {
