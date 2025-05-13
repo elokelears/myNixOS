@@ -18,6 +18,8 @@
 
   outputs = { self, nixpkgs, home-manager, nur, ... }@ inputs:
     let
+      system = "x86_64-linux"; 
+
       mkNixosSystem = { system ? "x86_64-linux", hostname, modules ? [ ], specialArgs ? { } }:
         nixpkgs.lib.nixosSystem {
           inherit system;
@@ -50,6 +52,22 @@
           ./host/machines/laptop-amd
         ];
       };
+      
+      devShells.${system} =
+        let
+          pkgs_for_devshell = import nixpkgs {
+            inherit system;
+          };
+        in
+        {
+          default = pkgs_for_devshell.mkShell {
+            name = "nixos-config-devshell";
+            nativeBuildInputs = with pkgs_for_devshell; [
+              nil
+          
+            ];
+          };
+        };
     };
 }
                        
