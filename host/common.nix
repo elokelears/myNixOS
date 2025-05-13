@@ -97,6 +97,12 @@
     #media-session.enable = true;
   };
 
+  # Enable Docker
+  virtualisation.docker = {
+    enable = true;
+
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -104,7 +110,7 @@
   users.users.elokelears = {
     isNormalUser = true;
     description = "elokelears";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
       #  thunderbird
